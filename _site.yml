@@ -1,0 +1,7 @@
+name: "Moreno-Betancur"
+output_dir: "."
+navbar:
+  title: "Margarita Moreno-Betancur"
+  left:
+    - text: "Home"
+      href: index.html
