@@ -1,21 +1,21 @@
 #### About me
-I am a postdoc in Biostatitics at the [Victorian Centre for Biostatistics](www.vicbiostat.org.au), working across [MCRI](https://www.mcri.edu.au/users/margarita-moreno-betancur) and the University of Melbourne. I combine methodological research in survival analysis, missing data and causal inference, with collaborative research in various substantive areas (e.g. [child and adolescent health](https://www.mcri.edu.au/research/themes/population-health/centre-adolescent-health), [social epidemiology](https://health.adelaide.edu.au/betterstart/)). Below you will find a description and resources for some of my projects.
+I am a postdoc in Biostatistics at the [Victorian Centre for Biostatistics](www.vicbiostat.org.au), working across [MCRI](https://www.mcri.edu.au/users/margarita-moreno-betancur) and the University of Melbourne. I combine methodological research in survival analysis, missing data and causal inference, with collaborative research in various substantive areas (e.g. [child and adolescent health](https://www.mcri.edu.au/research/themes/population-health/centre-adolescent-health), particularly in [social epidemiology](https://health.adelaide.edu.au/betterstart/)). Below you will find a description and resources for a selection of my projects.
 
 
 #### Survival analysis with multiple causes of death
 
-In our recent paper in *Epidemiology* (2017; 28(1): 12-19) we proposed the first statistical model for survival data that acknowledges that death may be caused by several diseases acting together by considering all the diseases mentioned on the death certificate. The model enables the estimation of both burden-of-disease indicators and epidemiological association parameters in a way that better reflects the contribution of each disease to mortality. This is particularly important for chronic and degenerative diseases.
+In our recent paper in *Epidemiology* (2017; 28(1): 12-19) we proposed a statistical model for survival data that acknowledges that death may be caused by several diseases acting together, by considering all the diseases mentioned on the death certificate. The model enables the estimation of both burden-of-disease indicators and epidemiological association parameters in a way that better reflects the contribution of each disease to mortality. This is particularly important for chronic and degenerative diseases.
 
 * [Paper in *Epidemiology*](http://journals.lww.com/epidem/Abstract/2017/01000/Survival_Analysis_with_Multiple_Causes_of_Death_.3.aspx),  [eAppendix](http://download.lww.com/wolterskluwer_vitalstream_com/PermaLink/EDE/B/EDE_2016_06_22_MORENOBETANCUR_15-522_SDC001.pdf) and [video abstract](http://wolterskluwer.http.internapcdn.net/wolterskluwer_vitalstream_com/MP4s/permalink/ede/b/ede_2016_07_15_betancur_15-0522_sdc9.mp4)
 * [R package 'survMCOD'](https://github.com/moreno-betancur/survMCOD): Scroll down the page in the link to learn how to install and use this R package to fit Cox models for multiple-cause mortality data using the model proposed in our paper.
 * Related papers:
      + [Commentary by S. Haneuse](http://journals.lww.com/epidem/Citation/2017/01000/Commentary___Multiple_Causes_of_Death__The.5.aspx) on our paper
-     + [Paper in the *Bulletin of the WHO*](http://www.who.int/bulletin/volumes/94/12/16-172189.pdf): Here we build on the same multiple-cause mortality model to calculate cause-related standardized mortality rates from multiple cause-of-death data. The aim is to obtain indicators that better reflect the burden of each disease on mortality.
+     + [Paper in *Bulletin of the WHO*](http://www.who.int/bulletin/volumes/94/12/16-172189.pdf): Here we build on the same multiple-cause mortality model to calculate cause-related standardized mortality rates from multiple cause-of-death data. The aim is to obtain indicators that better reflect the burden of each disease on mortality.
      + [Paper in *Bulletin épidémiologique hebdomadaire*](http://invs.santepubliquefrance.fr/beh/2017/1/pdf/2017_1_2.pdf)
 
 #### Time-dependent covariates in survival analysis
 
-Time-dependent covariates are typically incoporated in hazard rate models using a Last Observation Carried Forward (LOCF) approach, i.e. using the last available measurement as the value of the covariate at each event time. With measurement error or missing data this approach is biased. We developed a two-stage joint modelling approach to handle these issues when dealing with multiple continuous markers (paper under revision).
+Time-dependent covariates are typically incoporated in hazard rate models using a Last Observation Carried Forward (LOCF) approach, i.e. using the last available measurement as the value of the covariate at each event time. With measurement error or missing data this approach is biased, which has led to the development of joint modelling approaches. We developed a two-stage joint modelling approach to handle these issues when dealing with multiple continuous markers (paper submitted).
 
 * [R package 'survtd'](https://github.com/moreno-betancur/survtd): Use this R package to apply the usual LOCF or our approach to incorporate multiple time-dependent covariates in the Cox and additive hazard models.
 
@@ -23,7 +23,7 @@ Time-dependent covariates are typically incoporated in hazard rate models using 
 
 In a paper in *Epidemiology* (2015; 26(4):518-527) we studied the definitions and estimation of the Relative Index of Inequality (RII) and the Slope Index of Inequality (SII), two indices used to measure relative and absolute gradients in health across the socioeconomic scale. We specifically proposed methods to estimate these indices with individual or aggreated time-to-event data.
 
-* [Paper in *Epidemiology*](http://journals.lww.com/epidem/Abstract/2015/07000/Relative_Index_of_Inequality_and_Slope_Index_of.12.aspx) and pre-print. 
+* [Paper in *Epidemiology*](http://journals.lww.com/epidem/Abstract/2015/07000/Relative_Index_of_Inequality_and_Slope_Index_of.12.aspx). 
 * [eAppendix](http://download.lww.com/wolterskluwer_vitalstream_com/PermaLink/EDE/A/EDE_2015_04_01_MORENOBETANCUR_EDE14-467_SDC1.pdf) with R and SAS code.
 * [R code illustration](https://rpubs.com/latoucha/206380) by A. Latouche
 * [Webinar](https://www.youtube.com/watch?v=S6u3AcrtBuU) at Univ. Aix-Marseille
