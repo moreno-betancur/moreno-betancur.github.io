@@ -1,7 +1,12 @@
 name: "Moreno-Betancur"
 output_dir: "."
 navbar:
+  type: default
   title: "Margarita Moreno-Betancur"
   left:
     - text: "Home"
       href: index.html
+output:
+  html_document:
+    theme: readable
+    css: styles.css

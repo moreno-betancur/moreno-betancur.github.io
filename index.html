@@ -15,7 +15,7 @@
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/readable.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
@@ -66,6 +66,7 @@ h6 {
 }
 </style>
 
+<link rel="stylesheet" href="styles.css" type="text/css" />
 
 </head>
 
@@ -97,34 +98,34 @@ button.code-folding-btn:focus {
 <style type="text/css">
 /* padding for bootstrap navbar */
 body {
-  padding-top: 51px;
+  padding-top: 66px;
   padding-bottom: 40px;
 }
 /* offset scroll position for anchor links (for fixed navbar)  */
 .section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 71px;
+  margin-top: -71px;
 }
 
 .section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 71px;
+  margin-top: -71px;
 }
 .section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 71px;
+  margin-top: -71px;
 }
 .section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 71px;
+  margin-top: -71px;
 }
 .section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 71px;
+  margin-top: -71px;
 }
 .section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 71px;
+  margin-top: -71px;
 }
 </style>
 
@@ -194,15 +195,15 @@ $(document).ready(function () {
 </div>
 
 
-<div id="about-me" class="section level4">
-<h4>About me</h4>
-<p>I am a postdoc in Biostatistics at the <a href="http://www.vicbiostat.org.au">Victorian Centre for Biostatistics</a>, working across <a href="https://www.mcri.edu.au/users/margarita-moreno-betancur">MCRI</a> and the University of Melbourne. I combine methodological research in survival analysis, missing data and causal inference, with collaborative research in various substantive areas (e.g. <a href="https://www.mcri.edu.au/research/themes/population-health/centre-adolescent-health">child and adolescent health</a>, particularly in <a href="https://health.adelaide.edu.au/betterstart/">social epidemiology</a>). Below you will find a description and resources for a selection of my projects.</p>
-</div>
+<blockquote>
+<p>I am a postdoc in Biostatistics at the <a href="http://www.vicbiostat.org.au">Victorian Centre for Biostatistics</a>, working across <a href="https://www.mcri.edu.au/users/margarita-moreno-betancur">MCRI</a> and the University of Melbourne. I combine methodological research in survival analysis, missing data and causal inference, with collaborative research in various substantive areas, particularly in <a href="https://health.adelaide.edu.au/betterstart/">child</a> and <a href="https://www.mcri.edu.au/research/themes/population-health/centre-adolescent-health">adolescent</a> health. Below you will find a description and resources for selected projects.</p>
+</blockquote>
+<hr />
 <div id="survival-analysis-with-multiple-causes-of-death" class="section level4">
 <h4>Survival analysis with multiple causes of death</h4>
-<p>In our paper in <em>Epidemiology</em> (2017; 28(1): 12-19) we proposed a model for survival data that acknowledges that death may be caused by several diseases acting together, by considering all the diseases mentioned on the death certificate. This way we can estimate burden-of-disease indicators and epidemiological association parameters in a way that better reflects the contribution of each disease to mortality. This is particularly important for chronic and degenerative diseases.</p>
+<p>With colleagues we developed a model for disease-related mortality that acknowledges that death may be caused by several diseases acting together, by considering all diseases mentioned on the death certificate. We thus obtain estimates of burden-of-disease indicators and epidemiological association parameters that better reflect the contribution of certain diseases (e.g. chronic diseases) to mortality.</p>
 <ul>
-<li><a href="http://journals.lww.com/epidem/Abstract/2017/01000/Survival_Analysis_with_Multiple_Causes_of_Death_.3.aspx">Paper in <em>Epidemiology</em></a>, <a href="http://download.lww.com/wolterskluwer_vitalstream_com/PermaLink/EDE/B/EDE_2016_06_22_MORENOBETANCUR_15-522_SDC001.pdf">eAppendix</a> and <a href="http://wolterskluwer.http.internapcdn.net/wolterskluwer_vitalstream_com/MP4s/permalink/ede/b/ede_2016_07_15_betancur_15-0522_sdc9.mp4">video abstract</a></li>
+<li><a href="http://journals.lww.com/epidem/Abstract/2017/01000/Survival_Analysis_with_Multiple_Causes_of_Death_.3.aspx">Paper in <em>Epidemiology</em></a> (2017; 28(1): 12-19), <a href="http://download.lww.com/wolterskluwer_vitalstream_com/PermaLink/EDE/B/EDE_2016_06_22_MORENOBETANCUR_15-522_SDC001.pdf">eAppendix</a> and <a href="http://wolterskluwer.http.internapcdn.net/wolterskluwer_vitalstream_com/MP4s/permalink/ede/b/ede_2016_07_15_betancur_15-0522_sdc9.mp4">video abstract</a></li>
 <li><a href="https://github.com/moreno-betancur/survMCOD">R package ‘survMCOD’</a>: Scroll down the page in the link to learn how to install and use this R package to fit Cox models for multiple-cause mortality data using the model proposed in our paper.</li>
 <li>Related papers:
 <ul>
@@ -211,21 +212,23 @@ $(document).ready(function () {
 <li><a href="http://invs.santepubliquefrance.fr/beh/2017/1/pdf/2017_1_2.pdf">Paper in <em>Bulletin épidémiologique hebdomadaire</em></a></li>
 </ul></li>
 </ul>
+<hr />
 </div>
 <div id="time-dependent-covariates-in-survival-analysis" class="section level4">
 <h4>Time-dependent covariates in survival analysis</h4>
-<p>Time-dependent covariates are typically incoporated in hazard rate models using a Last Observation Carried Forward (LOCF) approach, i.e. using the last available measurement as the value of the covariate at each event time. With measurement error or missing data this approach is biased, which has led to the development of joint modelling approaches. We developed a two-stage joint modelling approach to handle these issues when dealing with multiple continuous markers (paper submitted).</p>
+<p>Time-dependent covariates are typically incoporated in hazard rate models using a Last Observation Carried Forward (LOCF) approach, i.e. using the last available measurement as the value of the covariate at each event time. With measurement error or missing data this approach is biased, which has led to the development of joint modelling approaches. We developed a two-stage joint modelling approach to handle these issues when dealing with multiple continuous markers (paper under review).</p>
 <ul>
 <li><a href="https://github.com/moreno-betancur/survtd">R package ‘survtd’</a>: Use this R package to apply the usual LOCF approach or our approach to incorporate multiple time-dependent covariates in the Cox and additive hazard models.</li>
 </ul>
+<hr />
 </div>
 <div id="measuring-socioeconomic-inequalities-in-health" class="section level4">
 <h4>Measuring socioeconomic inequalities in health</h4>
-<p>In a paper in <em>Epidemiology</em> (2015; 26(4):518-527) we studied the definitions and estimation of the Relative Index of Inequality (RII) and the Slope Index of Inequality (SII), two indices used to measure relative and absolute gradients in health across the socioeconomic scale. We specifically proposed methods to estimate these indices with individual or aggreated time-to-event data.</p>
+<p>The Relative Index of Inequality (RII) and the Slope Index of Inequality (SII) are two indices used to measure relative and absolute socioeconomic gradients in health. With colleagues we provided formal definitions for these indices and proposed methods for estimation with individual or aggreated time-to-event data.</p>
 <ul>
-<li><a href="http://journals.lww.com/epidem/Abstract/2015/07000/Relative_Index_of_Inequality_and_Slope_Index_of.12.aspx">Paper in <em>Epidemiology</em></a>.</li>
-<li><a href="http://download.lww.com/wolterskluwer_vitalstream_com/PermaLink/EDE/A/EDE_2015_04_01_MORENOBETANCUR_EDE14-467_SDC1.pdf">eAppendix</a> with R and SAS code.</li>
+<li><a href="http://journals.lww.com/epidem/Abstract/2015/07000/Relative_Index_of_Inequality_and_Slope_Index_of.12.aspx">Paper in <em>Epidemiology</em></a> (2015; 26(4):518-527)</li>
 <li><a href="https://rpubs.com/latoucha/206380">R code illustration</a> by A. Latouche</li>
+<li><a href="http://download.lww.com/wolterskluwer_vitalstream_com/PermaLink/EDE/A/EDE_2015_04_01_MORENOBETANCUR_EDE14-467_SDC1.pdf">eAppendix</a> with R and SAS code.</li>
 <li><a href="https://www.youtube.com/watch?v=S6u3AcrtBuU">Webinar</a> at Univ. Aix-Marseille</li>
 </ul>
 </div>
