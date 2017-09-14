@@ -206,7 +206,7 @@ $(document).ready(function () {
 <p>Time-dependent covariates are typically incoporated in hazard rate models using a Last Observation Carried Forward (LOCF) approach, i.e. using the last available measurement as the value of the covariate at each event time. With measurement error or missing data this approach is biased, which has led to the development of joint modelling approaches. We developed a two-stage joint modelling approach to handle these issues when dealing with multiple continuous markers.</p>
 <ul>
 <li><a href="https://github.com/moreno-betancur/survtd">R package ‘survtd’</a>: Scroll down the page in the link to learn how to install and use this R package to apply the usual LOCF approach or our approach to incorporate multiple time-dependent covariates in the Cox and additive hazard models.</li>
-<li>Paper: Moreno-Betancur M, Carlin JB, Brilleman SL, Tanamas S, Peeters A, Wolfe R. Survival analysis with time-dependent covariates subject to measurement error and missing data: Two-stage joint model using multiple imputation. 2016 (submitted).</li>
+<li>Paper: Moreno-Betancur M, Carlin JB, Brilleman SL, Tanamas S, Peeters A, Wolfe R. Survival analysis with time-dependent covariates subject to missing data or measurement error: Multiple Imputation for Joint Modeling (MIJM). <em>Biostatistics</em> 2017</li>
 </ul>
 <hr />
 </div>
@@ -259,7 +259,7 @@ $(document).ready(function () {
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>
