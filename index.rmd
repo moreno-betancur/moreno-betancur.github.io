@@ -1,19 +1,17 @@
-\
 
 
-> I am a postdoc in Biostatistics at the [Victorian Centre for Biostatistics](http://www.vicbiostat.org.au), working across [MCRI](https://www.mcri.edu.au/users/margarita-moreno-betancur) and the University of Melbourne. I combine methodological research in survival analysis, missing data and causal inference, with collaborative research in various substantive areas, particularly in [child](https://health.adelaide.edu.au/betterstart/) and [adolescent](https://www.mcri.edu.au/research/themes/population-health/centre-adolescent-health) health. Below you will find a description and resources for selected projects.
+> I am a postdoc in Biostatistics at the [Victorian Centre for Biostatistics](http://www.vicbiostat.org.au), working across [MCRI](https://www.mcri.edu.au/users/margarita-moreno-betancur) and the [University of Melbourne](http://mspgh.unimelb.edu.au/research-groups/centre-for-epidemiology-and-biostatistics-research/biostatistics). I combine methodological research in survival analysis, missing data and causal inference, with collaborative research in various substantive areas, particularly in [child](https://health.adelaide.edu.au/betterstart/) and [adolescent](https://www.mcri.edu.au/research/themes/population-health/centre-adolescent-health) health. Below you will find a description and resources for selected projects.
 
 ***
 
 #### Time-dependent covariates in survival analysis
 
-Time-dependent covariates are typically incoporated in hazard rate models using a Last Observation Carried Forward (LOCF) approach, i.e. using the last available measurement as the value of the covariate at each event time. With measurement error or missing data this approach is biased, which has led to the development of joint modelling approaches. We developed a two-stage joint modelling approach to handle these issues when dealing with multiple continuous markers.
+Time-dependent covariates are typically incoporated in hazard rate models using a Last Observation Carried Forward (LOCF) approach, i.e. using the last available measurement as the value of the covariate at each event time. With measurement error or missing data this approach is biased, which has led to the development of joint modelling approaches. We developed a two-stage joint modelling approach called **Multiple Imputation for Joint Modeling (MIJM)** to handle these issues when dealing with multiple continuous markers.
 
+* Paper in *Biostatistics* (Epub ahead of print 12 Oct 2017): [journal link](https://academic.oup.com/biostatistics/article-abstract/doi/10.1093/biostatistics/kxx046/4461848/Survival-analysis-with-time-dependent-covariates?redirectedFrom=fulltext) and [eAppendix](https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/biostatistics/PAP/10.1093_biostatistics_kxx046/1/kxx046_Supp.pdf?Expires=1508323179&Signature=B1T3y0Paxl0JvBp8Z0g10ElmkDabUUQnZvs-bgon3bnsQDU8pUyfofiHcfaoRenjK-b5PNtGJcpOKf20hIUgXJoApCBJHFgQicFFq6vMTTCNARGso5cDZAQZYDHHonMj1p4HSh36ojaUqiIvvHRMK2btANWBbyV0zHb29kcQ6QD0xOaN3~tPmXFNoIgBQLNrxEIoaVdZbsFc0d0notf40HuntwrwNR3InLydufetGj1zFpM8tshqxZjsFpK9Pmy-oIyhA~xRVT4BqjwWQHHcOmhXB3l9GBq6SPYE6XeRS77TrAvFWhnyAYjI~r5G5aqSDYwm6Ced54X-ktTwuaUjtg__&Key-Pair-Id=APKAIUCZBIA4LVPAVW3Q)
 * [R package 'survtd'](https://github.com/moreno-betancur/survtd): Scroll down the page in the link to learn how to install and use this R package to apply the usual LOCF approach or our approach to incorporate multiple time-dependent covariates in the Cox and additive hazard models.
-* Paper: Moreno-Betancur M, Carlin JB, Brilleman SL, Tanamas S, Peeters A, Wolfe R. Survival analysis with time-dependent covariates subject to missing data or measurement error: Multiple Imputation for Joint Modeling (MIJM). *Biostatistics* 2017
 
 ***
-
 
 #### Survival analysis with multiple causes of death
 
@@ -37,4 +35,18 @@ The Relative Index of Inequality (RII) and the Slope Index of Inequality (SII) a
 * [eAppendix](http://download.lww.com/wolterskluwer_vitalstream_com/PermaLink/EDE/A/EDE_2015_04_01_MORENOBETANCUR_EDE14-467_SDC1.pdf) with R and SAS code.
 * [Webinar](https://www.youtube.com/watch?v=S6u3AcrtBuU) at Univ. Aix-Marseille
 
+***
 
+#### Understanding variations in disease occurrence across populations
+
+We often wonder the extent to which variations in the distribution of risk factors for a disease explain differences in population measures of incidence or prevalence. With colleagues we formalised this quantitative problem using a causal approach. Thats is, we defined relevant estimands (what do we want to estimate?), assumptions under which these are idenfitiable (when can we estimate these?) and estimators under these assumptions (how can we estimate these?).
+
+* Paper in *International Journal of Epidemiology* (Epub ahead of print 18 Sept 2017): [journal link](https://academic.oup.com/ije/article-abstract/doi/10.1093/ije/dyx194/4161437/Measuring-the-impact-of-differences-in-risk-factor?redirectedFrom=fulltext) and [eAppendix](https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/ije/PAP/10.1093_ije_dyx194/1/dyx194_Supp.pdf?Expires=1508324295&Signature=Yn4ELl3~~53U2boyXRDngjzd4okP1cDWGqmpv4NTwN6xgfmTIJ0qnuSG8FrsMluQecp3KKklboBju1rmklm8UUNnJEkpkxN67G3zclDbmdr8neNRJvU1AFntnjzl9EmEml6UyOq6mWaz6rm7z~Sxi7Th4-ZI0ih1UggLjHvUFvgsTJMdm~j3hgdek3f4mj6nRsktnV5Xz0gUhMI4qT3vjT68ffhCHUwy4IomDDSUXDQORufuVtQsJYhwGRdG21yHu7gGX3HL5VZ13soKHRqiQvnbKM0SSupjXY4t3ImYHxMsf8NaCbQD1boEnwOHw4BJWRQ71gd16KUk6LDNQNSU9Q__&Key-Pair-Id=APKAIUCZBIA4LVPAVW3Q).
+* [R and Stata code](https://github.com/moreno-betancur/Population_comparisons/archive/master.zip) to apply the methods. 
+
+***
+
+#### Other projects
+
+* [Scholar](https://scholar.google.com.au/citations?user=aadVh5gAAAAJ&hl=en)
+* [GitHub](https://github.com/moreno-betancur)
