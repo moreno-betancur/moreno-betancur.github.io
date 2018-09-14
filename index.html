@@ -20,8 +20,8 @@
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-1.1/default.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-1.1/highlight.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -30,10 +30,12 @@
   }
 </style>
 <script type="text/javascript">
-if (window.hljs && document.readyState && document.readyState === "complete") {
-   window.setTimeout(function() {
-      hljs.initHighlighting();
-   }, 0);
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
 }
 </script>
 
@@ -88,6 +90,9 @@ img {
 }
 .tabbed-pane {
   padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
 }
 button.code-folding-btn:focus {
   outline: none;
@@ -196,7 +201,7 @@ $(document).ready(function () {
 
 
 <blockquote>
-<p>I am a postdoc in Biostatistics at the <a href="http://www.vicbiostat.org.au">Victorian Centre for Biostatistics</a>, working across <a href="https://www.mcri.edu.au/users/margarita-moreno-betancur">MCRI</a> and the <a href="http://mspgh.unimelb.edu.au/research-groups/centre-for-epidemiology-and-biostatistics-research/biostatistics">University of Melbourne</a>. I combine methodological research in survival analysis, missing data and causal inference, with collaborative research in various substantive areas, particularly in <a href="https://health.adelaide.edu.au/betterstart/">child</a> and <a href="https://www.mcri.edu.au/research/themes/population-health/centre-adolescent-health">adolescent</a> health. Below you will find a description and resources for selected projects.</p>
+<p>I am a researcher in biostatistics at the <a href="http://www.vicbiostat.org.au">Victorian Centre for Biostatistics</a>, working across <a href="https://www.mcri.edu.au/users/margarita-moreno-betancur">MCRI</a> and the <a href="http://mspgh.unimelb.edu.au/research-groups/centre-for-epidemiology-and-biostatistics-research/biostatistics">University of Melbourne</a>. I combine methodological research in survival analysis, missing data and causal inference, with collaborative research in various substantive areas, particularly in <a href="https://health.adelaide.edu.au/betterstart/">child</a> and <a href="https://www.mcri.edu.au/research/themes/population-health/centre-adolescent-health">adolescent</a> health. Below you will find a description and resources for selected projects.</p>
 </blockquote>
 <hr />
 <div id="time-dependent-covariates-in-survival-analysis" class="section level4">
