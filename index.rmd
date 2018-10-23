@@ -1,6 +1,37 @@
 
 
-> I am a researcher in biostatistics at the [Victorian Centre for Biostatistics](http://www.vicbiostat.org.au), working across [MCRI](https://www.mcri.edu.au/users/margarita-moreno-betancur) and the [University of Melbourne](http://mspgh.unimelb.edu.au/research-groups/centre-for-epidemiology-and-biostatistics-research/biostatistics). I combine methodological research in survival analysis, missing data and causal inference, with collaborative research in various substantive areas, particularly in [child](https://health.adelaide.edu.au/betterstart/) and [adolescent](https://www.mcri.edu.au/research/themes/population-health/centre-adolescent-health) health. Below you will find a description and resources for selected projects.
+> I am a researcher in biostatistics at the [Victorian Centre for Biostatistics](http://www.vicbiostat.org.au), working across [MCRI](https://www.mcri.edu.au/users/margarita-moreno-betancur) and the [University of Melbourne](http://mspgh.unimelb.edu.au/research-groups/centre-for-epidemiology-and-biostatistics-research/biostatistics). I combine methodological research in survival analysis, missing data and causal inference, with collaborative research in various substantive areas, particularly in child and adolescent health. Below you will find a description and resources for selected projects. For other projects see [Scholar](https://scholar.google.com.au/citations?user=aadVh5gAAAAJ&hl=en) and
+[GitHub](https://github.com/moreno-betancur).
+
+***
+
+#### Missing data assumptions, sensitivity analyses and causal diagrams
+
+I have long been interested in the development of methods for sensitivity analyses to departures from the "missing at random" (MAR) assumption. What that really meant with multivariable missingness was however difficult to understand, which is why I got interested in causal diagrams as a way to depict missingness assumptions. These have been proposed by Mohan, Pearl and others, and with colleagues we recently constructed canonical diagrams and derived results that will facilitate their application in point-exposure epidemiological studies:
+
+* [Paper in *American Journal of Epidemiology* (open access)](https://academic.oup.com/aje/advance-article/doi/10.1093/aje/kwy173/5074351?searchresult=1)
+
+* Papers on methods for sensitivity analyses to departures from MAR: 
+    + Setting with incomplete longitudinal outcomes: [Paper in *SMMR*](http://journals.sagepub.com/doi/abs/10.1177/0962280213490014)
+    + Setting with missing cause of failure in survival analysis with competing risks: [Paper in *Biometrics*](https://onlinelibrary.wiley.com/doi/abs/10.1111/biom.12295) 
+    + Setting with general multivariable missingness: [Paper in *Statistics in Medicine* (open access)](https://onlinelibrary.wiley.com/doi/full/10.1002/sim.7643) and [R package](https://github.com/moreno-betancur/NARFCS).
+
+***
+
+#### Mediation analysis
+
+For decades researchers have been interested in mediation analysis, which aims to decompose the causal effect of an exposure or treatment on an outcome into its effects via each of multiple pathways. The potential outcomes approach to causal inference has highlighted many difficulties in this endeavour in realistic settings with multiple mediators. Recently, an approach based on "interventional effects" was proposed by Vansteelandt and Daniel (see [here](https://journals.lww.com/epidem/Abstract/2017/03000/Interventional_Effects_for_Mediation_Analysis_with.15.aspx)). In work with my colleague John Carlin we explored the interpretation of these effects, describing hypothetical randomized trials that would enable their estimation:
+
+* [Paper in *Epidemiology*](https://journals.lww.com/epidem/Abstract/2018/09000/Understanding_Interventional_Effects___A_More.3.aspx)
+
+***
+
+#### Understanding variations in disease occurrence across populations
+
+We often wonder the extent to which variations in the distribution of risk factors for a disease explain differences in population measures of incidence or prevalence. With colleagues we formalised this quantitative problem using a causal approach. Thats is, we defined relevant estimands (what do we want to estimate?), assumptions under which these are idenfitiable (when can we estimate these?) and estimators under these assumptions (how can we estimate these?).
+
+* Paper in *International Journal of Epidemiology* (Epub ahead of print 18 Sept 2017): [journal link](https://academic.oup.com/ije/article-abstract/doi/10.1093/ije/dyx194/4161437/Measuring-the-impact-of-differences-in-risk-factor?redirectedFrom=fulltext) and [eAppendix](https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/ije/PAP/10.1093_ije_dyx194/1/dyx194_Supp.pdf?Expires=1508324295&Signature=Yn4ELl3~~53U2boyXRDngjzd4okP1cDWGqmpv4NTwN6xgfmTIJ0qnuSG8FrsMluQecp3KKklboBju1rmklm8UUNnJEkpkxN67G3zclDbmdr8neNRJvU1AFntnjzl9EmEml6UyOq6mWaz6rm7z~Sxi7Th4-ZI0ih1UggLjHvUFvgsTJMdm~j3hgdek3f4mj6nRsktnV5Xz0gUhMI4qT3vjT68ffhCHUwy4IomDDSUXDQORufuVtQsJYhwGRdG21yHu7gGX3HL5VZ13soKHRqiQvnbKM0SSupjXY4t3ImYHxMsf8NaCbQD1boEnwOHw4BJWRQ71gd16KUk6LDNQNSU9Q__&Key-Pair-Id=APKAIUCZBIA4LVPAVW3Q).
+* [R and Stata code](https://github.com/moreno-betancur/Population_comparisons/archive/master.zip) to apply the methods. 
 
 ***
 
@@ -37,16 +68,7 @@ The Relative Index of Inequality (RII) and the Slope Index of Inequality (SII) a
 
 ***
 
-#### Understanding variations in disease occurrence across populations
 
-We often wonder the extent to which variations in the distribution of risk factors for a disease explain differences in population measures of incidence or prevalence. With colleagues we formalised this quantitative problem using a causal approach. Thats is, we defined relevant estimands (what do we want to estimate?), assumptions under which these are idenfitiable (when can we estimate these?) and estimators under these assumptions (how can we estimate these?).
 
-* Paper in *International Journal of Epidemiology* (Epub ahead of print 18 Sept 2017): [journal link](https://academic.oup.com/ije/article-abstract/doi/10.1093/ije/dyx194/4161437/Measuring-the-impact-of-differences-in-risk-factor?redirectedFrom=fulltext) and [eAppendix](https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/ije/PAP/10.1093_ije_dyx194/1/dyx194_Supp.pdf?Expires=1508324295&Signature=Yn4ELl3~~53U2boyXRDngjzd4okP1cDWGqmpv4NTwN6xgfmTIJ0qnuSG8FrsMluQecp3KKklboBju1rmklm8UUNnJEkpkxN67G3zclDbmdr8neNRJvU1AFntnjzl9EmEml6UyOq6mWaz6rm7z~Sxi7Th4-ZI0ih1UggLjHvUFvgsTJMdm~j3hgdek3f4mj6nRsktnV5Xz0gUhMI4qT3vjT68ffhCHUwy4IomDDSUXDQORufuVtQsJYhwGRdG21yHu7gGX3HL5VZ13soKHRqiQvnbKM0SSupjXY4t3ImYHxMsf8NaCbQD1boEnwOHw4BJWRQ71gd16KUk6LDNQNSU9Q__&Key-Pair-Id=APKAIUCZBIA4LVPAVW3Q).
-* [R and Stata code](https://github.com/moreno-betancur/Population_comparisons/archive/master.zip) to apply the methods. 
 
-***
 
-#### Other projects
-
-* [Scholar](https://scholar.google.com.au/citations?user=aadVh5gAAAAJ&hl=en)
-* [GitHub](https://github.com/moreno-betancur)
