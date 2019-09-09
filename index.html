@@ -7,6 +7,7 @@
 <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -70,9 +71,7 @@ h6 {
 
 <link rel="stylesheet" href="styles.css" type="text/css" />
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -86,7 +85,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -96,6 +94,9 @@ img {
 }
 button.code-folding-btn:focus {
   outline: none;
+}
+summary {
+  display: list-item;
 }
 </style>
 
@@ -111,7 +112,6 @@ body {
   padding-top: 71px;
   margin-top: -71px;
 }
-
 .section h2 {
   padding-top: 71px;
   margin-top: -71px;
@@ -131,6 +131,43 @@ body {
 .section h6 {
   padding-top: 71px;
   margin-top: -71px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -152,19 +189,73 @@ $(document).ready(function () {
 });
 </script>
 
-
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-</script>
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
 
 <!-- code folding -->
 
 
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
 
 
 
@@ -201,9 +292,21 @@ $(document).ready(function () {
 
 
 <blockquote>
-<p>I am a researcher in biostatistics at the <a href="http://www.vicbiostat.org.au">Victorian Centre for Biostatistics</a>, working across <a href="https://www.mcri.edu.au/users/margarita-moreno-betancur">MCRI</a> and the <a href="http://mspgh.unimelb.edu.au/research-groups/centre-for-epidemiology-and-biostatistics-research/biostatistics">University of Melbourne</a>. I combine methodological research in survival analysis, missing data and causal inference, with collaborative research in various substantive areas, particularly in child and adolescent health. Below you will find a description and resources for selected projects. For other projects see <a href="https://scholar.google.com.au/citations?user=aadVh5gAAAAJ&amp;hl=en">Scholar</a> and <a href="https://github.com/moreno-betancur">GitHub</a>.</p>
+<p>I am a researcher in biostatistics at the <a href="http://www.vicbiostat.org.au">Victorian Centre for Biostatistics</a>, working across the <a href="https://www.findanexpert.unimelb.edu.au/display/person793371">University of Melbourne</a> and the <a href="https://www.mcri.edu.au/users/margarita-moreno-betancur">Murdoch Children’s Research Institute</a>. I combine methodological research in causal inference, missing data and survival analysis, with collaborative research in various substantive areas, particularly in child and adolescent health. Below you will find a description and resources for selected projects. For more see my <a href="https://scholar.google.com.au/citations?user=aadVh5gAAAAJ&amp;hl=en">Scholar</a>, <a href="https://github.com/moreno-betancur">GitHub</a> &amp; <a href="https://twitter.com/_MargaritaMB">Twitter</a> (<span class="citation">@_MargaritaMB</span>)</p>
 </blockquote>
 <hr />
+<div id="mediation-analysis" class="section level4">
+<h4>Mediation analysis</h4>
+<p>For decades researchers have been interested in mediation analysis, which aims to decompose the causal effect of an exposure or treatment on an outcome into its effects via each of multiple pathways. The potential outcomes approach to causal inference has highlighted many difficulties in this endeavour in realistic settings with multiple mediators. Recently, an approach based on “interventional effects” was proposed by Vansteelandt and Daniel (see <a href="https://journals.lww.com/epidem/Abstract/2017/03000/Interventional_Effects_for_Mediation_Analysis_with.15.aspx">here</a>). In work with my colleague John Carlin we explored the interpretation of these effects, describing the hypothetical randomized trials that are implicitly emulated by these effects:</p>
+<ul>
+<li><a href="https://journals.lww.com/epidem/Abstract/2018/09000/Understanding_Interventional_Effects___A_More.3.aspx">Paper in <em>Epidemiology</em></a></li>
+</ul>
+<p>More recently, we proposed to define interventional mediation effects for multiple mediators explicitly using the concept of the target randomized trial:</p>
+<ul>
+<li><a href="https://arxiv.org/abs/1907.06734">Pre-print on arXiv</a></li>
+</ul>
+<hr />
+</div>
 <div id="missing-data-assumptions-sensitivity-analyses-and-causal-diagrams" class="section level4">
 <h4>Missing data assumptions, sensitivity analyses and causal diagrams</h4>
 <p>I have long been interested in the development of methods for sensitivity analyses to departures from the “missing at random” (MAR) assumption. What that really meant with multivariable missingness was however difficult to understand, which is why I got interested in causal diagrams as a way to depict missingness assumptions. These have been proposed by Mohan, Pearl and others, and with colleagues we recently constructed canonical diagrams and derived results that will facilitate their application in point-exposure epidemiological studies:</p>
@@ -215,14 +318,6 @@ $(document).ready(function () {
 <li>Setting with missing cause of failure in survival analysis with competing risks: <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/biom.12295">Paper in <em>Biometrics</em></a></li>
 <li>Setting with general multivariable missingness: <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/sim.7643">Paper in <em>Statistics in Medicine</em> (open access)</a> and <a href="https://github.com/moreno-betancur/NARFCS">R package</a>.</li>
 </ul></li>
-</ul>
-<hr />
-</div>
-<div id="mediation-analysis" class="section level4">
-<h4>Mediation analysis</h4>
-<p>For decades researchers have been interested in mediation analysis, which aims to decompose the causal effect of an exposure or treatment on an outcome into its effects via each of multiple pathways. The potential outcomes approach to causal inference has highlighted many difficulties in this endeavour in realistic settings with multiple mediators. Recently, an approach based on “interventional effects” was proposed by Vansteelandt and Daniel (see <a href="https://journals.lww.com/epidem/Abstract/2017/03000/Interventional_Effects_for_Mediation_Analysis_with.15.aspx">here</a>). In work with my colleague John Carlin we explored the interpretation of these effects, describing hypothetical randomized trials that would enable their estimation:</p>
-<ul>
-<li><a href="https://journals.lww.com/epidem/Abstract/2018/09000/Understanding_Interventional_Effects___A_More.3.aspx">Paper in <em>Epidemiology</em></a></li>
 </ul>
 <hr />
 </div>
@@ -268,6 +363,10 @@ $(document).ready(function () {
 <li><a href="http://download.lww.com/wolterskluwer_vitalstream_com/PermaLink/EDE/A/EDE_2015_04_01_MORENOBETANCUR_EDE14-467_SDC1.pdf">eAppendix</a> with R and SAS code.</li>
 <li><a href="https://www.youtube.com/watch?v=S6u3AcrtBuU">Webinar</a> at Univ. Aix-Marseille</li>
 </ul>
+<p>More recently we applied these ideas to the measurement of socioeconomic inequalities in mortality, developing a method to estimate the SII in the life years lost metric, and its decomposition by cause of death, using a recent approach in survival analysis based on “pseudo-observations”/“pseudo-values”.</p>
+<ul>
+<li>Paper in <em>Epidemiology</em> (2019; 30(4):569-572): <a href="https://journals.lww.com/epidem/Fulltext/2019/07000/A_Note_on_the_Measurement_of_Socioeconomic.15.aspx">journal link</a></li>
+</ul>
 <hr />
 </div>
 
@@ -288,6 +387,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

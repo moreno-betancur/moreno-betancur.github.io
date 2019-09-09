@@ -1,7 +1,20 @@
 
 
-> I am a researcher in biostatistics at the [Victorian Centre for Biostatistics](http://www.vicbiostat.org.au), working across [MCRI](https://www.mcri.edu.au/users/margarita-moreno-betancur) and the [University of Melbourne](http://mspgh.unimelb.edu.au/research-groups/centre-for-epidemiology-and-biostatistics-research/biostatistics). I combine methodological research in survival analysis, missing data and causal inference, with collaborative research in various substantive areas, particularly in child and adolescent health. Below you will find a description and resources for selected projects. For other projects see [Scholar](https://scholar.google.com.au/citations?user=aadVh5gAAAAJ&hl=en) and
-[GitHub](https://github.com/moreno-betancur).
+> I am a researcher in biostatistics at the [Victorian Centre for Biostatistics](http://www.vicbiostat.org.au), working across the [University of Melbourne](https://www.findanexpert.unimelb.edu.au/display/person793371) and the [Murdoch Children's Research Institute](https://www.mcri.edu.au/users/margarita-moreno-betancur). I combine methodological research in causal inference, missing data and survival analysis, with collaborative research in various substantive areas, particularly in child and adolescent health. Below you will find a description and resources for selected projects. 
+> For more see my [Scholar](https://scholar.google.com.au/citations?user=aadVh5gAAAAJ&hl=en), [GitHub](https://github.com/moreno-betancur) & [Twitter](https://twitter.com/_MargaritaMB) (@_MargaritaMB)
+
+
+***
+
+#### Mediation analysis
+
+For decades researchers have been interested in mediation analysis, which aims to decompose the causal effect of an exposure or treatment on an outcome into its effects via each of multiple pathways. The potential outcomes approach to causal inference has highlighted many difficulties in this endeavour in realistic settings with multiple mediators. Recently, an approach based on "interventional effects" was proposed by Vansteelandt and Daniel (see [here](https://journals.lww.com/epidem/Abstract/2017/03000/Interventional_Effects_for_Mediation_Analysis_with.15.aspx)). In work with my colleague John Carlin we explored the interpretation of these effects, describing the hypothetical randomized trials that are implicitly emulated by these effects:
+
+* [Paper in *Epidemiology*](https://journals.lww.com/epidem/Abstract/2018/09000/Understanding_Interventional_Effects___A_More.3.aspx)
+
+More recently, we proposed to define interventional mediation effects for multiple mediators explicitly using the concept of the target randomized trial:
+
+* [Pre-print on arXiv](https://arxiv.org/abs/1907.06734)
 
 ***
 
@@ -15,14 +28,6 @@ I have long been interested in the development of methods for sensitivity analys
     + Setting with incomplete longitudinal outcomes: [Paper in *SMMR*](http://journals.sagepub.com/doi/abs/10.1177/0962280213490014)
     + Setting with missing cause of failure in survival analysis with competing risks: [Paper in *Biometrics*](https://onlinelibrary.wiley.com/doi/abs/10.1111/biom.12295) 
     + Setting with general multivariable missingness: [Paper in *Statistics in Medicine* (open access)](https://onlinelibrary.wiley.com/doi/full/10.1002/sim.7643) and [R package](https://github.com/moreno-betancur/NARFCS).
-
-***
-
-#### Mediation analysis
-
-For decades researchers have been interested in mediation analysis, which aims to decompose the causal effect of an exposure or treatment on an outcome into its effects via each of multiple pathways. The potential outcomes approach to causal inference has highlighted many difficulties in this endeavour in realistic settings with multiple mediators. Recently, an approach based on "interventional effects" was proposed by Vansteelandt and Daniel (see [here](https://journals.lww.com/epidem/Abstract/2017/03000/Interventional_Effects_for_Mediation_Analysis_with.15.aspx)). In work with my colleague John Carlin we explored the interpretation of these effects, describing hypothetical randomized trials that would enable their estimation:
-
-* [Paper in *Epidemiology*](https://journals.lww.com/epidem/Abstract/2018/09000/Understanding_Interventional_Effects___A_More.3.aspx)
 
 ***
 
@@ -59,12 +64,19 @@ With colleagues we developed a model for disease-related mortality that acknowle
 
 #### Measuring socioeconomic inequalities in health
 
-The Relative Index of Inequality (RII) and the Slope Index of Inequality (SII) are two indices used to measure relative and absolute socioeconomic gradients in health. With colleagues we provided formal definitions for these indices and proposed methods for estimation with individual or aggreated time-to-event data.
+The Relative Index of Inequality (RII) and the Slope Index of Inequality (SII) are two indices used to measure relative and absolute socioeconomic gradients in health. With colleagues we provided formal definitions for these indices and proposed methods for estimation with individual or aggreated time-to-event data. 
 
 * Paper in *Epidemiology* (2015; 26(4):518-527): [pre-print access](http://hdl.handle.net/11343/129569) and [journal link](http://journals.lww.com/epidem/Abstract/2015/07000/Relative_Index_of_Inequality_and_Slope_Index_of.12.aspx) 
 * [R code illustration](https://rpubs.com/latoucha/206380) by A. Latouche
 * [eAppendix](http://download.lww.com/wolterskluwer_vitalstream_com/PermaLink/EDE/A/EDE_2015_04_01_MORENOBETANCUR_EDE14-467_SDC1.pdf) with R and SAS code.
 * [Webinar](https://www.youtube.com/watch?v=S6u3AcrtBuU) at Univ. Aix-Marseille
+
+More recently we applied these ideas to the measurement of socioeconomic inequalities in mortality, developing a method to estimate the SII in the life years lost metric, and its decomposition by cause of death, using a recent approach in survival analysis based on "pseudo-observations"/"pseudo-values".
+
+* Paper in *Epidemiology* (2019; 30(4):569-572): [journal link](https://journals.lww.com/epidem/Fulltext/2019/07000/A_Note_on_the_Measurement_of_Socioeconomic.15.aspx) 
+
+
+
 
 ***
 
