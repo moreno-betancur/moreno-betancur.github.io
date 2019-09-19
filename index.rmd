@@ -15,6 +15,7 @@ For decades researchers have been interested in mediation analysis, which aims t
 More recently, we proposed to define interventional mediation effects for multiple mediators explicitly using the concept of the target randomized trial:
 
 * [Pre-print on arXiv](https://arxiv.org/abs/1907.06734)
+* [R function medRCT](https://github.com/moreno-betancur/medRCT)
 
 ***
 
