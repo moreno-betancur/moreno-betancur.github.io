@@ -1,7 +1,7 @@
 
 
 > I am a researcher in biostatistics at the [Victorian Centre for Biostatistics](http://www.vicbiostat.org.au), working across the [University of Melbourne](https://www.findanexpert.unimelb.edu.au/display/person793371) and the [Murdoch Children's Research Institute](https://www.mcri.edu.au/users/margarita-moreno-betancur). I combine methodological research in causal inference, missing data and survival analysis, with collaborative research in various substantive areas, particularly in child and adolescent health. Below you will find a description and resources for selected projects. 
-> For more see my [Scholar](https://scholar.google.com.au/citations?user=aadVh5gAAAAJ&hl=en), [GitHub](https://github.com/moreno-betancur) & [Twitter](https://twitter.com/_MargaritaMB) (@_MargaritaMB)
+> For more see my [Scholar](https://scholar.google.com.au/citations?user=aadVh5gAAAAJ&hl=en), [GitHub](https://github.com/moreno-betancur) & [Twitter](https://twitter.com/_MargaritaMB) (@_MargaritaMB), and visit my [causal team](http://www.vicbiostat.org.au/research/causal-inference-health-data-science-advancing-understanding-and-methods).
 
 
 ***
@@ -32,12 +32,17 @@ I have long been interested in the development of methods for sensitivity analys
 
 ***
 
-#### Understanding variations in disease occurrence across populations
+#### Survival analysis with multiple causes of death
 
-We often wonder the extent to which variations in the distribution of risk factors for a disease explain differences in population measures of incidence or prevalence. With colleagues we formalised this quantitative problem using a causal approach. Thats is, we defined relevant estimands (what do we want to estimate?), assumptions under which these are idenfitiable (when can we estimate these?) and estimators under these assumptions (how can we estimate these?).
+With colleagues we developed a model for disease-related mortality that acknowledges that death may be caused by several diseases acting together, by considering all diseases mentioned on the death certificate. We thus obtain estimates of burden-of-disease indicators and epidemiological association parameters that better reflect the contribution of certain diseases (e.g. chronic diseases) to mortality.
 
-* Paper in *International Journal of Epidemiology* (Epub ahead of print 18 Sept 2017): [journal link](https://academic.oup.com/ije/article-abstract/doi/10.1093/ije/dyx194/4161437/Measuring-the-impact-of-differences-in-risk-factor?redirectedFrom=fulltext) and [eAppendix](https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/ije/PAP/10.1093_ije_dyx194/1/dyx194_Supp.pdf?Expires=1508324295&Signature=Yn4ELl3~~53U2boyXRDngjzd4okP1cDWGqmpv4NTwN6xgfmTIJ0qnuSG8FrsMluQecp3KKklboBju1rmklm8UUNnJEkpkxN67G3zclDbmdr8neNRJvU1AFntnjzl9EmEml6UyOq6mWaz6rm7z~Sxi7Th4-ZI0ih1UggLjHvUFvgsTJMdm~j3hgdek3f4mj6nRsktnV5Xz0gUhMI4qT3vjT68ffhCHUwy4IomDDSUXDQORufuVtQsJYhwGRdG21yHu7gGX3HL5VZ13soKHRqiQvnbKM0SSupjXY4t3ImYHxMsf8NaCbQD1boEnwOHw4BJWRQ71gd16KUk6LDNQNSU9Q__&Key-Pair-Id=APKAIUCZBIA4LVPAVW3Q).
-* [R and Stata code](https://github.com/moreno-betancur/Population_comparisons/archive/master.zip) to apply the methods. 
+* Paper in *Epidemiology* (2017; 28(1): 12-19): [journal link](http://journals.lww.com/epidem/Abstract/2017/01000/Survival_Analysis_with_Multiple_Causes_of_Death_.3.aspx),  [eAppendix](http://download.lww.com/wolterskluwer_vitalstream_com/PermaLink/EDE/B/EDE_2016_06_22_MORENOBETANCUR_15-522_SDC001.pdf) and [video abstract](http://wolterskluwer.http.internapcdn.net/wolterskluwer_vitalstream_com/MP4s/permalink/ede/b/ede_2016_07_15_betancur_15-0522_sdc9.mp4)
+* [R package 'survMCOD'](https://github.com/moreno-betancur/survMCOD): Scroll down the page in the link to learn how to install and use this R package to fit Cox models for multiple-cause mortality data using the model proposed in our paper.
+* [Webinar](https://www.youtube.com/watch?v=tSK9EohnoiM&feature=youtu.be): Joint with the Australian Bureau of Statistics, hosted by the Statistical Society of Australia (Feb 7 2020).
+* Related papers:
+     + [Paper in *Bulletin of the WHO*](http://www.who.int/bulletin/volumes/94/12/16-172189.pdf): Here we build on the same multiple-cause mortality model to calculate cause-related standardized mortality rates from multiple cause-of-death data. The aim is to obtain indicators that better reflect the burden of each disease on mortality.
+     + [Paper in *Bulletin épidémiologique hebdomadaire*](http://invs.santepubliquefrance.fr/beh/2017/1/pdf/2017_1_2.pdf)
+     + [Commentary by S. Haneuse](http://journals.lww.com/epidem/Citation/2017/01000/Commentary___Multiple_Causes_of_Death__The.5.aspx) on our paper
 
 ***
 
@@ -50,16 +55,12 @@ Time-dependent covariates are typically incoporated in hazard rate models using 
 
 ***
 
-#### Survival analysis with multiple causes of death
+#### Understanding variations in disease occurrence across populations
 
-With colleagues we developed a model for disease-related mortality that acknowledges that death may be caused by several diseases acting together, by considering all diseases mentioned on the death certificate. We thus obtain estimates of burden-of-disease indicators and epidemiological association parameters that better reflect the contribution of certain diseases (e.g. chronic diseases) to mortality.
+We often wonder the extent to which variations in the distribution of risk factors for a disease explain differences in population measures of incidence or prevalence. With colleagues we formalised this quantitative problem using a causal approach. Thats is, we defined relevant estimands (what do we want to estimate?), assumptions under which these are idenfitiable (when can we estimate these?) and estimators under these assumptions (how can we estimate these?).
 
-* Paper in *Epidemiology* (2017; 28(1): 12-19): [journal link](http://journals.lww.com/epidem/Abstract/2017/01000/Survival_Analysis_with_Multiple_Causes_of_Death_.3.aspx),  [eAppendix](http://download.lww.com/wolterskluwer_vitalstream_com/PermaLink/EDE/B/EDE_2016_06_22_MORENOBETANCUR_15-522_SDC001.pdf) and [video abstract](http://wolterskluwer.http.internapcdn.net/wolterskluwer_vitalstream_com/MP4s/permalink/ede/b/ede_2016_07_15_betancur_15-0522_sdc9.mp4)
-* [R package 'survMCOD'](https://github.com/moreno-betancur/survMCOD): Scroll down the page in the link to learn how to install and use this R package to fit Cox models for multiple-cause mortality data using the model proposed in our paper.
-* Related papers:
-     + [Paper in *Bulletin of the WHO*](http://www.who.int/bulletin/volumes/94/12/16-172189.pdf): Here we build on the same multiple-cause mortality model to calculate cause-related standardized mortality rates from multiple cause-of-death data. The aim is to obtain indicators that better reflect the burden of each disease on mortality.
-     + [Paper in *Bulletin épidémiologique hebdomadaire*](http://invs.santepubliquefrance.fr/beh/2017/1/pdf/2017_1_2.pdf)
-     + [Commentary by S. Haneuse](http://journals.lww.com/epidem/Citation/2017/01000/Commentary___Multiple_Causes_of_Death__The.5.aspx) on our paper
+* Paper in *International Journal of Epidemiology* (Epub ahead of print 18 Sept 2017): [journal link](https://academic.oup.com/ije/article-abstract/doi/10.1093/ije/dyx194/4161437/Measuring-the-impact-of-differences-in-risk-factor?redirectedFrom=fulltext) and [eAppendix](https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/ije/PAP/10.1093_ije_dyx194/1/dyx194_Supp.pdf?Expires=1508324295&Signature=Yn4ELl3~~53U2boyXRDngjzd4okP1cDWGqmpv4NTwN6xgfmTIJ0qnuSG8FrsMluQecp3KKklboBju1rmklm8UUNnJEkpkxN67G3zclDbmdr8neNRJvU1AFntnjzl9EmEml6UyOq6mWaz6rm7z~Sxi7Th4-ZI0ih1UggLjHvUFvgsTJMdm~j3hgdek3f4mj6nRsktnV5Xz0gUhMI4qT3vjT68ffhCHUwy4IomDDSUXDQORufuVtQsJYhwGRdG21yHu7gGX3HL5VZ13soKHRqiQvnbKM0SSupjXY4t3ImYHxMsf8NaCbQD1boEnwOHw4BJWRQ71gd16KUk6LDNQNSU9Q__&Key-Pair-Id=APKAIUCZBIA4LVPAVW3Q).
+* [R and Stata code](https://github.com/moreno-betancur/Population_comparisons/archive/master.zip) to apply the methods. 
 
 ***
 
@@ -75,8 +76,6 @@ The Relative Index of Inequality (RII) and the Slope Index of Inequality (SII) a
 More recently we applied these ideas to the measurement of socioeconomic inequalities in mortality, developing a method to estimate the SII in the life years lost metric, and its decomposition by cause of death, using a recent approach in survival analysis based on "pseudo-observations"/"pseudo-values".
 
 * Paper in *Epidemiology* (2019; 30(4):569-572): [journal link](https://journals.lww.com/epidem/Fulltext/2019/07000/A_Note_on_the_Measurement_of_Socioeconomic.15.aspx) 
-
-
 
 
 ***

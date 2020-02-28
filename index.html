@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
 
-<title></title>
+<title>index.utf8</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -233,6 +232,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -292,7 +292,7 @@ $(document).ready(function () {
 
 
 <blockquote>
-<p>I am a researcher in biostatistics at the <a href="http://www.vicbiostat.org.au">Victorian Centre for Biostatistics</a>, working across the <a href="https://www.findanexpert.unimelb.edu.au/display/person793371">University of Melbourne</a> and the <a href="https://www.mcri.edu.au/users/margarita-moreno-betancur">Murdoch Children’s Research Institute</a>. I combine methodological research in causal inference, missing data and survival analysis, with collaborative research in various substantive areas, particularly in child and adolescent health. Below you will find a description and resources for selected projects. For more see my <a href="https://scholar.google.com.au/citations?user=aadVh5gAAAAJ&amp;hl=en">Scholar</a>, <a href="https://github.com/moreno-betancur">GitHub</a> &amp; <a href="https://twitter.com/_MargaritaMB">Twitter</a> (<span class="citation">@_MargaritaMB</span>)</p>
+<p>I am a researcher in biostatistics at the <a href="http://www.vicbiostat.org.au">Victorian Centre for Biostatistics</a>, working across the <a href="https://www.findanexpert.unimelb.edu.au/display/person793371">University of Melbourne</a> and the <a href="https://www.mcri.edu.au/users/margarita-moreno-betancur">Murdoch Children’s Research Institute</a>. I combine methodological research in causal inference, missing data and survival analysis, with collaborative research in various substantive areas, particularly in child and adolescent health. Below you will find a description and resources for selected projects. For more see my <a href="https://scholar.google.com.au/citations?user=aadVh5gAAAAJ&amp;hl=en">Scholar</a>, <a href="https://github.com/moreno-betancur">GitHub</a> &amp; <a href="https://twitter.com/_MargaritaMB">Twitter</a> (<span class="citation">@_MargaritaMB</span>), and visit my <a href="http://www.vicbiostat.org.au/research/causal-inference-health-data-science-advancing-understanding-and-methods">causal team</a>.</p>
 </blockquote>
 <hr />
 <div id="mediation-analysis" class="section level4">
@@ -313,7 +313,7 @@ $(document).ready(function () {
 <p>I have long been interested in the development of methods for sensitivity analyses to departures from the “missing at random” (MAR) assumption. What that really meant with multivariable missingness was however difficult to understand, which is why I got interested in causal diagrams as a way to depict missingness assumptions. These have been proposed by Mohan, Pearl and others, and with colleagues we recently constructed canonical diagrams and derived results that will facilitate their application in point-exposure epidemiological studies:</p>
 <ul>
 <li><p><a href="https://academic.oup.com/aje/advance-article/doi/10.1093/aje/kwy173/5074351?searchresult=1">Paper in <em>American Journal of Epidemiology</em> (open access)</a></p></li>
-<li>Papers on methods for sensitivity analyses to departures from MAR:
+<li><p>Papers on methods for sensitivity analyses to departures from MAR:</p>
 <ul>
 <li>Setting with incomplete longitudinal outcomes: <a href="http://journals.sagepub.com/doi/abs/10.1177/0962280213490014">Paper in <em>SMMR</em></a></li>
 <li>Setting with missing cause of failure in survival analysis with competing risks: <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/biom.12295">Paper in <em>Biometrics</em></a></li>
@@ -322,12 +322,19 @@ $(document).ready(function () {
 </ul>
 <hr />
 </div>
-<div id="understanding-variations-in-disease-occurrence-across-populations" class="section level4">
-<h4>Understanding variations in disease occurrence across populations</h4>
-<p>We often wonder the extent to which variations in the distribution of risk factors for a disease explain differences in population measures of incidence or prevalence. With colleagues we formalised this quantitative problem using a causal approach. Thats is, we defined relevant estimands (what do we want to estimate?), assumptions under which these are idenfitiable (when can we estimate these?) and estimators under these assumptions (how can we estimate these?).</p>
+<div id="survival-analysis-with-multiple-causes-of-death" class="section level4">
+<h4>Survival analysis with multiple causes of death</h4>
+<p>With colleagues we developed a model for disease-related mortality that acknowledges that death may be caused by several diseases acting together, by considering all diseases mentioned on the death certificate. We thus obtain estimates of burden-of-disease indicators and epidemiological association parameters that better reflect the contribution of certain diseases (e.g. chronic diseases) to mortality.</p>
 <ul>
-<li>Paper in <em>International Journal of Epidemiology</em> (Epub ahead of print 18 Sept 2017): <a href="https://academic.oup.com/ije/article-abstract/doi/10.1093/ije/dyx194/4161437/Measuring-the-impact-of-differences-in-risk-factor?redirectedFrom=fulltext">journal link</a> and <a href="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/ije/PAP/10.1093_ije_dyx194/1/dyx194_Supp.pdf?Expires=1508324295&amp;Signature=Yn4ELl3~~53U2boyXRDngjzd4okP1cDWGqmpv4NTwN6xgfmTIJ0qnuSG8FrsMluQecp3KKklboBju1rmklm8UUNnJEkpkxN67G3zclDbmdr8neNRJvU1AFntnjzl9EmEml6UyOq6mWaz6rm7z~Sxi7Th4-ZI0ih1UggLjHvUFvgsTJMdm~j3hgdek3f4mj6nRsktnV5Xz0gUhMI4qT3vjT68ffhCHUwy4IomDDSUXDQORufuVtQsJYhwGRdG21yHu7gGX3HL5VZ13soKHRqiQvnbKM0SSupjXY4t3ImYHxMsf8NaCbQD1boEnwOHw4BJWRQ71gd16KUk6LDNQNSU9Q__&amp;Key-Pair-Id=APKAIUCZBIA4LVPAVW3Q">eAppendix</a>.</li>
-<li><a href="https://github.com/moreno-betancur/Population_comparisons/archive/master.zip">R and Stata code</a> to apply the methods.</li>
+<li>Paper in <em>Epidemiology</em> (2017; 28(1): 12-19): <a href="http://journals.lww.com/epidem/Abstract/2017/01000/Survival_Analysis_with_Multiple_Causes_of_Death_.3.aspx">journal link</a>, <a href="http://download.lww.com/wolterskluwer_vitalstream_com/PermaLink/EDE/B/EDE_2016_06_22_MORENOBETANCUR_15-522_SDC001.pdf">eAppendix</a> and <a href="http://wolterskluwer.http.internapcdn.net/wolterskluwer_vitalstream_com/MP4s/permalink/ede/b/ede_2016_07_15_betancur_15-0522_sdc9.mp4">video abstract</a></li>
+<li><a href="https://github.com/moreno-betancur/survMCOD">R package ‘survMCOD’</a>: Scroll down the page in the link to learn how to install and use this R package to fit Cox models for multiple-cause mortality data using the model proposed in our paper.</li>
+<li><a href="https://www.youtube.com/watch?v=tSK9EohnoiM&amp;feature=youtu.be">Webinar</a>: Joint with the Australian Bureau of Statistics, hosted by the Statistical Society of Australia (Feb 7 2020).</li>
+<li>Related papers:
+<ul>
+<li><a href="http://www.who.int/bulletin/volumes/94/12/16-172189.pdf">Paper in <em>Bulletin of the WHO</em></a>: Here we build on the same multiple-cause mortality model to calculate cause-related standardized mortality rates from multiple cause-of-death data. The aim is to obtain indicators that better reflect the burden of each disease on mortality.</li>
+<li><a href="http://invs.santepubliquefrance.fr/beh/2017/1/pdf/2017_1_2.pdf">Paper in <em>Bulletin épidémiologique hebdomadaire</em></a></li>
+<li><a href="http://journals.lww.com/epidem/Citation/2017/01000/Commentary___Multiple_Causes_of_Death__The.5.aspx">Commentary by S. Haneuse</a> on our paper</li>
+</ul></li>
 </ul>
 <hr />
 </div>
@@ -340,18 +347,12 @@ $(document).ready(function () {
 </ul>
 <hr />
 </div>
-<div id="survival-analysis-with-multiple-causes-of-death" class="section level4">
-<h4>Survival analysis with multiple causes of death</h4>
-<p>With colleagues we developed a model for disease-related mortality that acknowledges that death may be caused by several diseases acting together, by considering all diseases mentioned on the death certificate. We thus obtain estimates of burden-of-disease indicators and epidemiological association parameters that better reflect the contribution of certain diseases (e.g. chronic diseases) to mortality.</p>
+<div id="understanding-variations-in-disease-occurrence-across-populations" class="section level4">
+<h4>Understanding variations in disease occurrence across populations</h4>
+<p>We often wonder the extent to which variations in the distribution of risk factors for a disease explain differences in population measures of incidence or prevalence. With colleagues we formalised this quantitative problem using a causal approach. Thats is, we defined relevant estimands (what do we want to estimate?), assumptions under which these are idenfitiable (when can we estimate these?) and estimators under these assumptions (how can we estimate these?).</p>
 <ul>
-<li>Paper in <em>Epidemiology</em> (2017; 28(1): 12-19): <a href="http://journals.lww.com/epidem/Abstract/2017/01000/Survival_Analysis_with_Multiple_Causes_of_Death_.3.aspx">journal link</a>, <a href="http://download.lww.com/wolterskluwer_vitalstream_com/PermaLink/EDE/B/EDE_2016_06_22_MORENOBETANCUR_15-522_SDC001.pdf">eAppendix</a> and <a href="http://wolterskluwer.http.internapcdn.net/wolterskluwer_vitalstream_com/MP4s/permalink/ede/b/ede_2016_07_15_betancur_15-0522_sdc9.mp4">video abstract</a></li>
-<li><a href="https://github.com/moreno-betancur/survMCOD">R package ‘survMCOD’</a>: Scroll down the page in the link to learn how to install and use this R package to fit Cox models for multiple-cause mortality data using the model proposed in our paper.</li>
-<li>Related papers:
-<ul>
-<li><a href="http://www.who.int/bulletin/volumes/94/12/16-172189.pdf">Paper in <em>Bulletin of the WHO</em></a>: Here we build on the same multiple-cause mortality model to calculate cause-related standardized mortality rates from multiple cause-of-death data. The aim is to obtain indicators that better reflect the burden of each disease on mortality.</li>
-<li><a href="http://invs.santepubliquefrance.fr/beh/2017/1/pdf/2017_1_2.pdf">Paper in <em>Bulletin épidémiologique hebdomadaire</em></a></li>
-<li><a href="http://journals.lww.com/epidem/Citation/2017/01000/Commentary___Multiple_Causes_of_Death__The.5.aspx">Commentary by S. Haneuse</a> on our paper</li>
-</ul></li>
+<li>Paper in <em>International Journal of Epidemiology</em> (Epub ahead of print 18 Sept 2017): <a href="https://academic.oup.com/ije/article-abstract/doi/10.1093/ije/dyx194/4161437/Measuring-the-impact-of-differences-in-risk-factor?redirectedFrom=fulltext">journal link</a> and <a href="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/ije/PAP/10.1093_ije_dyx194/1/dyx194_Supp.pdf?Expires=1508324295&amp;Signature=Yn4ELl3~~53U2boyXRDngjzd4okP1cDWGqmpv4NTwN6xgfmTIJ0qnuSG8FrsMluQecp3KKklboBju1rmklm8UUNnJEkpkxN67G3zclDbmdr8neNRJvU1AFntnjzl9EmEml6UyOq6mWaz6rm7z~Sxi7Th4-ZI0ih1UggLjHvUFvgsTJMdm~j3hgdek3f4mj6nRsktnV5Xz0gUhMI4qT3vjT68ffhCHUwy4IomDDSUXDQORufuVtQsJYhwGRdG21yHu7gGX3HL5VZ13soKHRqiQvnbKM0SSupjXY4t3ImYHxMsf8NaCbQD1boEnwOHw4BJWRQ71gd16KUk6LDNQNSU9Q__&amp;Key-Pair-Id=APKAIUCZBIA4LVPAVW3Q">eAppendix</a>.</li>
+<li><a href="https://github.com/moreno-betancur/Population_comparisons/archive/master.zip">R and Stata code</a> to apply the methods.</li>
 </ul>
 <hr />
 </div>
